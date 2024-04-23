@@ -7,7 +7,7 @@
             <div class="card-body">
               <h2 class="card-title">{{$type->name}}</h2>
               
-              {{-- <a href="{{route('admin.projects.edit', $project->id)}}" class="btn btn-warning">Modifica</a> --}}
+            <a href="{{route('admin.types.edit', $type->id)}}" class="btn btn-warning">Modifica</a>
             </div>    
             {{-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Elmina progetto
