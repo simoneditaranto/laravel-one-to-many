@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TypeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,8 +47,10 @@ Route::middleware(['auth', 'verified'])
             // tutti i loro url iniziano con 'admin/'
             Route::get('/', [DashboardController::class, 'index']);
             
-            // Route::get('/projects', [DashboardController::class, 'showProjects'])->name('projects');
             Route::resource('/projects', ProjectController::class);
 
+            // aggiungo la rotta per i tipi
+            Route::resource('types', TypeController::class);
+            
             }
         );

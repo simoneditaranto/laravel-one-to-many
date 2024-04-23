@@ -9,4 +9,9 @@ use PhpParser\Node\Expr\FuncCall;
 class Type extends Model
 {
     use HasFactory;
+
+    // una categoria può appartenere a più progetti
+    public function projects() {
+        return $this->hasMany(Project::class);
+    }
 }
