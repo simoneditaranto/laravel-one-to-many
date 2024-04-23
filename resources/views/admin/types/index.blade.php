@@ -33,10 +33,10 @@
             
         </div>
 
-        {{-- 
-        <button type="button" class="btn btn-primary">
-            <a href="{{route('admin.projects.create')}}" class="text-white text-decoration-none">Aggiungi nuovo progetto</a>
-        </button> --}}
+        
+        <button type="button" class="btn btn-success">
+            <a href="{{route('admin.types.create')}}" class="text-white text-decoration-none">Aggiungi nuovo tipo</a>
+        </button>
 
     </div>
     
