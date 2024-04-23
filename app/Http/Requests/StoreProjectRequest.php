@@ -27,6 +27,7 @@ class StoreProjectRequest extends FormRequest
             'thumb' => 'required|max:255',
             'technologies' => 'required|max:100',
             'link_repo' => 'required|max:255',
+            'type_id' => 'nullable|exists:types,id'
         ];
     }
 
