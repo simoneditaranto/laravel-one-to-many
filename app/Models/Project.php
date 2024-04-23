@@ -13,4 +13,10 @@ class Project extends Model
     use SoftDeletes;
 
     protected $fillable = ['name', 'description', 'thumb', 'technologies', 'link_repo'];
+
+        // aggiungo la possibilità di leggere le tabelle a lui collegate
+    // il progetto appartiene ad un solo tipo
+    public function type() {
+        return $this->belongsTo(Type::class);
+    }
 }
