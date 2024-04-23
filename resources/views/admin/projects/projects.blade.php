@@ -34,6 +34,9 @@
         <button type="button" class="btn btn-primary">
             <a href="{{route('admin.projects.create')}}" class="text-white text-decoration-none">Aggiungi nuovo progetto</a>
         </button>
+        <button type="button" class="btn btn-info">
+            <a href="/admin" class="text-white text-decoration-none">Amministrazione</a>
+        </button>
 
     </div>
     
